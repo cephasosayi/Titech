@@ -1,0 +1,172 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:400,700|Montserrat:400,700);
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css);
+
+.bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+
+.cover-container {
+  max-width: 42em;
+}
+
+
+/*
+ * Header
+ */
+
+.nav-masthead .nav-link {
+  padding: .25rem 0;
+  font-weight: 700;
+  color: rgba(255, 255, 255, .5);
+  background-color: transparent;
+  border-bottom: .25rem solid transparent;
+}
+
+.nav-masthead .nav-link:hover,
+.nav-masthead .nav-link:focus {
+  border-bottom-color: rgba(255, 255, 255, .25);
+}
+
+.nav-masthead .nav-link + .nav-link {
+  margin-left: 1rem;
+}
+
+.nav-masthead .active {
+  color: #fff;
+  border-bottom-color: #fff;
+}
+
+/*header*/
+.b-example-divider {
+  height: 3rem;
+  background-color: rgba(0, 0, 0, .1);
+  border: solid rgba(0, 0, 0, .15);
+  border-width: 1px 0;
+  box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+}
+
+.form-control-dark {
+  color: #fff;
+  background-color: var(--bs-dark);
+  border-color: var(--bs-gray);
+}
+.form-control-dark:focus {
+  color: #fff;
+  background-color: var(--bs-dark);
+  border-color: #fff;
+  box-shadow: 0 0 0 .25rem rgba(255, 255, 255, .25);
+}
+
+.bi {
+  vertical-align: -.125em;
+  fill: currentColor;
+}
+
+.text-small {
+  font-size: 85%;
+}
+
+.dropdown-toggle {
+  outline: 0;
+}
+
+.pricing-header {
+  max-width: 700px;
+}
+
+.bg-cover {
+    background-size: cover !important;
+    background: url(https://images.pexels.com/photos/3321789/pexels-photo-3321789.jpeg?cs=srgb&dl=pexels-matheus-bertelli-3321789.jpg&fm=jpg) rgba(000, 0, 000, 0.7);
+    background-blend-mode: multiply;
+    /*height: 100%;*/
+}
+.bg-coverr {
+    background-size: cover !important;
+    background: url("img/nile.jpg") rgba(000, 0, 000, 0.7);
+    background-blend-mode: multiply;
+    /*height: 100%;*/
+}
+img {
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+}
+img:hover {
+  filter: initial;
+  -webkit-filter: none;
+
+}
+.b-example-divider {
+  height: 3rem;
+  background-color: rgba(0, 0, 0, .1);
+  border: solid rgba(0, 0, 0, .15);
+  border-width: 1px 0;
+  box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+}
+
+@media (min-width: 992px) {
+  .rounded-lg-3 { border-radius: .3rem; }
+}
+
+/*---Media Queries --*/
+@media (max-width: 992px) {
+    .social a{
+      font-size: 4em;
+      padding: 2rem;
+    }
+    .atend{
+    float: left;
+    margin-left: 210px;
+  }
+  .text-end{
+    display: none;
+  }
+  }
+@media (max-width: 768px) {
+  
+}
+@media (max-width: 576px) {
+  img {
+  -webkit-filter: none; /* Safari 6.0 - 9.0 */
+  filter:none;
+}
+}
+
+
+/*Medium (md) devices (tablets, 768px and up)*/
+@media (min-width: 768px) { ... }
+
+/*Large (lg) devices (desktops, 992px and up)*/
+@media (min-width: 992px) { 
+  .atend{
+    display: none;
+  }
+  }
+
+/*Extra (xl) large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) { ... }
+*/
+/*
+.hi{
+    background: url(https://images.pexels.com/photos/6353673/pexels-photo-6353673.jpeg?cs=srgb&dl=pexels-anete-lusina-6353673.jpg&fm=jpg) rgba(000, 0, 000, 0.7);
+
+}*/
+
+a{
+  text-decoration:none;
+  color: green;
+}
+
+a:hover{
+  text-decoration: underline;
+  color: yellow;
+}
