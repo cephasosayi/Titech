@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="icon" href="img/place.png">
+
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>TiTech 2021</title>
@@ -22,10 +24,10 @@
 <nav class="navbar navbar-expand-md navbar-dark bg-dark text-white sticky-top">
     <div class="container">
         <a class="navbar-brand" href="index.html"><img >Logo</a>
-         <div class="atend">
+         <!-- <div class="atend">
                 <a href="login.html">
           <a href="#plan"><button type="button" class="btn btn-sm btn-success">Register</button></a>
-        </div>
+        </div> -->
 
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
             <span class="navbar-toggler-icon"></span>
@@ -41,7 +43,7 @@
                 </li><li class="nav-item">
                     <a class="nav-link" href="#services">Speakers</a>
                 </li><li class="nav-item">
-                    <a class="nav-link" href="#pricing">Make Reservations</a>
+                    <a class="nav-link" href="#pricing">Make Payment</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#testimonial">Info</a>
@@ -58,14 +60,14 @@
     </div>
 </nav>
 <!-- cover with event name, and date with image -->
-<div class="container d-flex w-100 h-100 p-3 mx-auto text-white ">
+<div class="container-fluid w-100 h-100 text-white ">
     <main class="px-3">
     <h2 class="text-center lead" style="font-size: 25px; letter-spacing: 3px;"><strong>Titech 2021</strong></h2>
     <h2 class="text-center lead" style="font-size: 22px; letter-spacing: 2px;"><strong>September 14th, 2021 | Abuja</strong></h2>
 
 
  <div  class="jumbotron bg-cover text-white">
-    <div class="container py-5 text-center">
+    <div class="container-fluid py-5 text-center">
         <h1 class="display-4 font-weight-bold">Titech 2021</h1>
         <p class="mb-0 lead">Transforming Innovation For Technological Sustainability.</p>
         <br>
@@ -77,77 +79,224 @@
 </div>
 
 <!-- abut event  two column-->
-<div class="container col-xxl-8 px-2 py-2 te text-white">
+<div class="container col-xxl-8 col-sm-12 px-2 py-2 text-white" id="about">
     <div class="row flex-lg-row-reverse align-items-center g-5 py-5" >
       <div class="col-sm-12 col-lg-6">
-        <img src="img/img3.jpg" class="d-block mx-lg-auto img-fluid w-100" loading="lazy">
+        <img src="img/place.png" class="d-block mx-lg-auto img-fluid w-100" loading="lazy">
       </div>
       <div class="col-lg-6">
         <h1 class="display-5 fw-bold lh-1 mb-3">About Titech 2021</h1>
-        <p class="lead">Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.</p>
+        <p class="lead">TITECH 2021 is the second largest annual Zonal Conference of Computing Students in
+the zone which is being followed by the National Conference. The theme for this
+convention is TITECH 2021 “TRANSFORMING INNOVATION FOR TECHNOLOGICAL
+SUSTAINABILITY” This is a 4-day event scheduled to hold from 14th – 17th September
+2021 at Abuja.
+This event will host more than 1,200 (One thousand, two hundred) students from all
+twenty-three (23) higher institutions in the zone.
+</p>
         
       </div>
     </div>
   </div>
   <!-- register now location overley-->
 
- <div  class="jumbotron bg-coverr text-white">
-    <div class="container py-5 text-center " style="max-height: 760px;">
+ <div  class="jumbotron bg-coverr text-dark" id="pricing">
+    <div class="container py-2 text-center " style="max-height: 760px;">
         <h1 class="display-4 font-weight-bold">REGISTER NOW </h1>
         <p class="mb-0 lead">TITECH is an investment in yourself conference.</p>
        </div>
 
 <!-- pricing -->
-<div class="container">
- <div class="row row-cols-1 row-cols-md-3 mb-3 text-center" id="plan">
+<div class="container justify-content-center">
+ <div class="row row-cols-1 row-cols-md-2 text-center text-dark " id="plan">
       <div class="col">
         <div class="card mb-4 rounded-3 shadow-sm border-success">
           <div class="card-header py-3 text-white bg-success border-success">
-            <h4 class="my-0 fw-normal">Free</h4>
+            <h4 class="my-0 fw-normal">Nacossite</h4>
           </div>
           <div class="card-body text-dark">
-            <h1 class="card-title pricing-card-title">$0<small class="text-muted fw-light">/mo</small></h1>
+            
             <ul class="list-unstyled mt-3 mb-4">
-              <li>10 users included</li>
-              <li>2 GB of storage</li>
+              <li class="pricing-card-title">N5,500 <small class="text-muted fw-light">- with accomodation</small></li>
+              <li class="pricing-card-title">N4,000 <small class="text-muted fw-light">- without accomodation</small></li>
+              <!-- <li>2 GB of storage</li>
               <li>Email support</li>
-              <li>Help center access</li>
+              <li>Help center access</li> -->
             </ul>
-            <a href="checkout.html"><button type="button" class="w-100 btn btn-lg btn-outline-success" >Select Package</button></a>
+           <button type="button" class="w-100 btn btn-lg btn-outline-success" data-bs-toggle="modal" data-bs-target="#exampleModal">Pay Now</button>
           </div>
         </div>
       </div>
+
       <div class="col">
         <div class="card mb-4 rounded-3 shadow-sm border-success">
           <div class="card-header py-3 text-white bg-success border-success">
-            <h4 class="my-0 fw-normal">Pro</h4>
+            <h4 class="my-0 fw-normal">NON Nacossite</h4>
           </div>
           <div class="card-body text-dark">
-            <h1 class="card-title pricing-card-title">$15<small class="text-muted fw-light">/mo</small></h1>
             <ul class="list-unstyled mt-3 mb-4">
-              <li>20 users included</li>
-              <li>10 GB of storage</li>
-              <li>Priority email support</li>
-              <li>Help center access</li>
+              <li class="pricing-card-title">N6,000 <small class="text-muted fw-light">+ with accomodation</small></li>
+              <li class="pricing-card-title">N4,500 <small class="text-muted fw-light">+ without accomodation</small></li>
             </ul>
-            <a href="checkout.html"><button type="button" class="w-100 btn btn-lg btn-outline-success" >Select Package</button></a>
-          </div>
-        </div>
+                  <!-- Button trigger modal -->
+            <button type="button" class="w-100 btn btn-lg btn-outline-success" data-bs-toggle="modal" data-bs-target="#exampleModal" >Pay Now</button>
+      
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Make Payment</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
-      <div class="col">
-        <div class="card mb-4 rounded-3 shadow-sm border-success">
-          <div class="card-header py-3 text-white bg-success border-success">
-            <h4 class="my-0 fw-normal">Enterprise</h4>
+      <div class="modal-body">
+       <div class="container-fluid text-start">
+  <main>
+   <!--  <div class="py-5">
+      <p class="lead">Below is an example form built entirely with Bootstrap’s form controls. Each required form group has a validation state that can be triggered by attempting to submit the form without completing it.</p>
+    </div> -->
+
+       <h4 class="mb-3">Billing address</h4>
+        <form class="needs-validation" novalidate>
+          <div class="row g-3">
+            <div class="col-sm-6">
+              <label for="firstName" class="form-label">First name</label>
+              <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
+              <div class="invalid-feedback">
+                Valid first name is required.
+              </div>
+            </div>
+
+            <div class="col-sm-6">
+              <label for="lastName" class="form-label">Last name</label>
+              <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
+              <div class="invalid-feedback">
+                Valid last name is required.
+              </div>
+            </div>
+
+           
+
+            <div class="col-12">
+              <label for="email" class="form-label">Email <span class="text-muted">(Optional)</span></label>
+              <input type="email" class="form-control" id="email" placeholder="you@example.com">
+              <div class="invalid-feedback">
+                Please enter a valid email address for updates.
+              </div>
+            </div>
+
+            <div class="col-12">
+              <label for="address" class="form-label">Address</label>
+              <input type="text" class="form-control" id="address" placeholder="1234 Main St" required>
+              <div class="invalid-feedback">
+                Please enter your  address.
+              </div>
+            </div>
+
+            <div class="col-12">
+              <label for="address2" class="form-label">Address 2 <span class="text-muted">(Optional)</span></label>
+              <input type="text" class="form-control" id="address2" placeholder="Apartment or suite">
+            </div>
+
+            <div class="col-md-5">
+              <label for="country" class="form-label">Country</label>
+              <select class="form-select" id="country" required>
+                <option value="">Select...</option>
+                <option>Nigeria</option>
+                              </select>
+              <div class="invalid-feedback">
+                Please select a valid country.
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <label for="state" class="form-label">State</label>
+              <select class="form-select" id="state" required>
+                <option value="">Select...</option>
+                <option>Nasarawa</option>
+                <option>Abia</option>
+                <option>Edo</option>
+                <option>Akwa Ibom</option>
+                <option>Anambra</option>
+                <option>Bauchi</option>
+                <option>Bayelsa</option>
+                <option>Benue</option>
+                <option>Borno</option>
+                <option>Plateau</option>
+                <option>Kaduna</option>
+                <option>Niger</option>
+                <option>FCT</option>
+
+
+
+              </select>
+              <div class="invalid-feedback">
+                Please provide a valid state.
+              </div>
+            </div>
+
+            <div class="col-md-3">
+              <label for="zip" class="form-label">Zip</label>
+              <input type="text" class="form-control" id="zip" placeholder="" required>
+              <div class="invalid-feedback">
+                Zip code required.
+              </div>
+            </div>
           </div>
-          <div class="card-body text-dark">
-            <h1 class="card-title pricing-card-title">$29<small class="text-muted fw-light">/mo</small></h1>
-            <ul class="list-unstyled mt-3 mb-4">
-              <li>30 users included</li>
-              <li>15 GB of storage</li>
-              <li>Phone and email support</li>
-              <li>Help center access</li>
-            </ul>
-            <a href="checkout.html"><button type="button" class="w-100 btn btn-lg btn-outline-success" >Select Package</button></a>
+
+          <hr class="my-4">
+
+          <div class="row gy-3">
+            <div class="col-md-6">
+              <label for="cc-name" class="form-label">Name on card</label>
+              <input type="text" class="form-control" id="cc-name" placeholder="" required>
+              <small class="text-muted">Full name as displayed on card</small>
+              <div class="invalid-feedback">
+                Name on card is required
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <label for="cc-number" class="form-label">Credit card number</label>
+              <input type="text" class="form-control" id="cc-number" placeholder="" required>
+              <div class="invalid-feedback">
+                Credit card number is required
+              </div>
+            </div>
+
+            <div class="col-md-3">
+              <label for="cc-expiration" class="form-label">Expiration</label>
+              <input type="text" class="form-control" id="cc-expiration" placeholder="" required>
+              <div class="invalid-feedback">
+                Expiration date required
+              </div>
+            </div>
+
+            <div class="col-md-3">
+              <label for="cc-cvv" class="form-label">CVV</label>
+              <input type="text" class="form-control" id="cc-cvv" placeholder="" required>
+              <div class="invalid-feedback">
+                Security code required
+              </div>
+            </div>
+          </div>
+
+      
+         
+          <button class="w-100 btn btn-outline-success btn-lg px-4" type="submit" style="margin-top:20px;">Pay Now</button>
+        </form>
+      </div>
+    </div>
+  </main>
+</div>
+     <!--  </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        
+      </div>
+    </div>
+  </div>
+</div>
           </div>
         </div>
       </div>
@@ -155,10 +304,11 @@
 
     </div>
 </div>
+ -->
 <!-- featured speakers album -->
-<section class="py-5 text-center container" style="margin-top: -25px;">
+<!-- <section class="py-2 text-center container" style="margin-top: -20px;">
     <div class="row py-lg-5">
-      <div class="col-lg-6 col-md-8 mx-auto">
+      <div class="col-lg-6 col-md-8 col-sm-12">
                 <h1 class="display-5 fw-bold lh-1 mb-3 text-white text-start">Featured Speakers</h1>
 
         
@@ -241,11 +391,11 @@
         </div>
       </div>
     </div>
-  </div>
+  </div> -->
 
 <!-- jumbotrum help -->
 
-<div class="container text-white py-4 hi">
+<div class="container text-white py-4 " id="services">
     <div class="row jumbotron bg-dark shadow-lg">
         <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 col-xl-10">
             <p class="lead">For Sponsorship and enquiry, call +23474517306, +23499035985</p>
@@ -255,6 +405,40 @@
         </div>
     </div>
 </div>
+
+<!-- event -->
+<div class="container text-white py-4 hi">
+    <div class="row jumbotron text-dark shadow-lg">
+        <div class="col-xs-12 col-sm-12 col-md-9 col-lg-6 col-xl-6">
+          <h4>The Event - Featuring</h4>
+            <p class="lead">3 Full Days Conference</p>
+            <ul >
+              <li>Techposium</li>
+              <li>Hackaton</li>
+              <li>Techposium</li>
+              <li>Competition</li>
+              <li>Networking Session</li>
+              <li>Sport</li>
+              <li>Award Night</li>              
+            </ul>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-3 col-lg-6 col-xl-6">
+          <h2 class="display-3 mb-4" >TITECH'21</h2>
+
+        <h3 class="pricing-card-title"> Arrival Date</h3>
+        <ul>
+          <li><strong>14<sup>th</sup></strong>September, 2021</li>
+        </ul>
+        <h3 class="pricing-card-title"> Departure Date</h3>
+        <ul>
+          <li><strong>18<sup>th</sup></strong>September, 2021</li>
+        </ul>
+
+        </div>
+    </div>
+</div>
+</div>
+
 
 <!-- footer -->
 <footer class="text-center py-5 bg-dark text-white" style="margin-top:20px;">
